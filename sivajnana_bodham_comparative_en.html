@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Śivajñāna Bodham — Comparative Study of the Sanskrit and Tamil Versions</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --paper: #fffdf9;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #7c3aed;
+      --accent-2: #0f766e;
+      --soft-1: #f5f3ff;
+      --soft-2: #ecfeff;
+      --soft-3: #fff7ed;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(124,58,237,.08), rgba(15,118,110,.08));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 10px; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { font-size: clamp(1.35rem, 2vw, 1.8rem); margin-top: 28px; }
+    h3 { font-size: 1.15rem; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .note {
+      background: var(--paper);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .summary .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 10px;
+      margin: 26px 0 10px;
+    }
+    .toc a {
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-align: center;
+      padding: 10px 12px;
+      font-size: .95rem;
+      box-shadow: var(--shadow);
+    }
+    .sutra {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      margin-top: 18px;
+    }
+    .sutra-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .badge {
+      display: inline-block;
+      font-size: .85rem;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--soft-3);
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      white-space: nowrap;
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .col {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      background: #fff;
+    }
+    .col.sans { background: var(--soft-1); }
+    .col.tamil { background: var(--soft-2); }
+    .col h3 {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .comment {
+      background: var(--soft-3);
+      border: 1px solid #fed7aa;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .comment strong { color: #9a3412; }
+    .foot {
+      margin-top: 32px;
+      padding: 18px 0 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    @media (max-width: 840px) {
+      .cols { grid-template-columns: 1fr; }
+      .sutra-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media print {
+      body { background: white; }
+      .hero, .sutra, .summary .card, .toc a { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Śivajñāna Bodham</h1>
+      <p><strong>Comparative study of the two working versions based on the Sanskrit and the Tamil texts</strong></p>
+      <div class="note">
+        <p><strong>Reading key:</strong> the Sanskrit-based version tends to sound more metaphysical, logical, and scholastic; the Tamil-based version tends to sound more imagistic, devotional, and initiatory. The central doctrine, however, remains the same.</p>
+      </div>
+
+      <div class="summary">
+        <div class="card">
+          <h3>Sanskrit-based version</h3>
+          <p>More compact, abstract, and systematic. It articulates the metaphysical argument and the conceptual distinctions more explicitly.</p>
+        </div>
+        <div class="card">
+          <h3>Tamil-based version</h3>
+          <p>More concrete, symbolic, and contemplative. It makes the practical, devotional, and experiential dimension more visible.</p>
+        </div>
+        <div class="card">
+          <h3>Main difference</h3>
+          <p>Not a change in doctrine, but a change in language, emphasis, and spiritual atmosphere.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2>Index of the sūtras</h2>
+    <div class="toc">
+      <a href="#s1">1</a>
+      <a href="#s2">2</a>
+      <a href="#s3">3</a>
+      <a href="#s4">4</a>
+      <a href="#s5">5</a>
+      <a href="#s6">6</a>
+      <a href="#s7">7</a>
+      <a href="#s8">8</a>
+      <a href="#s9">9</a>
+      <a href="#s10">10</a>
+      <a href="#s11">11</a>
+      <a href="#s12">12</a>
+    </div>
+
+    <section class="sutra" id="s1">
+      <div class="sutra-head"><h2>Sūtra 1</h2><span class="badge">Cosmology and manifestation</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>Since the world appears under diverse forms—female, male, neuter, and so on—and is perceived as something produced, there must be a maker. That Lord, Hara, withdraws the world into Himself and manifests it again.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>That which is called “he,” “she,” and “it”—the world in its many forms—arises, endures, and dissolves. Because it is subject to these three processes and remains latent within impurity, the wise say that it has both beginning and end.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the Sanskrit formulation stresses the cosmological argument more directly: the world is an effect, therefore there is a creator. The Tamil formulation dwells more on the transience of the manifest: what appears as “he/she/it” is born, lasts, and passes away.</div>
+    </section>
+
+    <section class="sutra" id="s2">
+      <div class="sutra-head"><h2>Sūtra 2</h2><span class="badge">Immanence and transcendence</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>He is distinct from the world and from the souls; yet, by pervading all, He is not separate from them. As agent, according to the karma of beings, He conducts the cycle of transmigration through His divine ordinance.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>He remains as these things and yet remains Himself. Without ever departing from His divine command, He causes souls to undergo coming and going, birth and death, according to the twofold karma.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> both preserve transcendence and immanence, but the Tamil expresses it more paradoxically: Śiva is in all things without being reducible to all things. The Sanskrit version is more analytic; the Tamil more suggestive.</div>
+    </section>
+
+    <section class="sutra" id="s3">
+      <div class="sutra-head"><h2>Sūtra 3</h2><span class="badge">Inference of the soul</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>By the negation “this am I not,” by the arising of the notion “mine,” by awareness when the senses cease, by the absence of experience in deep sleep, and by the fact that there is a knower in the act of knowing, one infers the existence of an individual, subtle, limited soul.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>Because we say “this exists” and “this does not exist,” because we say “my body,” because we know when the five senses are withdrawn, because in sleep there is no experience of action or enjoyment, and because we know when something is taught to us, one concludes that there is a soul within the body fashioned by māyā.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> here the Sanskrit sounds more logical and conceptual; the Tamil more phenomenological. The Sanskrit formulates a line of reasoning about “I” and “mine”; the Tamil strings together signs drawn from lived experience in order to infer the soul.</div>
+    </section>
+
+    <section class="sutra" id="s4">
+      <div class="sutra-head"><h2>Sūtra 4</h2><span class="badge">Soul and inner instruments</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>The soul is different from the inner instrument—mind, intellect, ego, and memory—though joined to it like a king to his minister. It passes through the five states of experience, but its knowledge and action are obscured by mala, the impurity.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>The soul is none of the inner instruments. It is associated with them, yet different from them. Because of innate impurity, it does not know its true nature. It remains like a king beside his minister, passing through the five states of experience.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> there is almost no doctrinal divergence here. The Tamil makes the existential point more explicit: the soul does not know its own nature because of impurity. The Sanskrit states the same in a more compressed way.</div>
+    </section>
+
+    <section class="sutra" id="s5">
+      <div class="sutra-head"><h2>Sūtra 5</h2><span class="badge">Knowing through Śiva</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>The senses know objects for the sake of the soul, but not by themselves. In the same way, the soul knows through Śambhu. Śiva, however, is not affected by this; just as a magnet moves iron without becoming iron, He guides the soul without being limited by it.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>The organs—skin, mouth, eyes, nose, and the rest—know their objects only in a limited way; they do not know by themselves. Likewise, the soul does not know by its own isolated power. It knows through Śiva’s grace, just as iron moves in the presence of a magnet.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the two versions converge strongly. The main distinction is tonal: the Tamil underscores more directly the soul’s dependence on grace, while the Sanskrit highlights the causal model with slightly greater philosophical neutrality.</div>
+    </section>
+
+    <section class="sutra" id="s6">
+      <div class="sutra-head"><h2>Sūtra 6</h2><span class="badge">How Śiva is knowable</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>If Śiva were wholly invisible, He might be taken as nonexistent. If He were simply visible as an object, He would be inert. Therefore the wise understand that the knowable form of Śambhu is different from what is merely visible and from what is merely invisible.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>If we say that Śiva is a form knowable as an object, He would become something insentient. If we say that He cannot be known at all, He would appear nonexistent. Therefore Śiva fits neither of these extremes: He is Śiva-sat, conscious reality.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the content is nearly the same. The Sanskrit works more with the opposition “visible/invisible”; the Tamil recasts it as “objectifiable” versus “inaccessible.” In both, the solution is that Śiva transcends those ordinary categories.</div>
+    </section>
+
+    <section class="sutra" id="s7">
+      <div class="sutra-head"><h2>Sūtra 7</h2><span class="badge">The soul between real and unreal</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>The unconscious does not know consciousness, and the supreme consciousness is not known by the unconscious as an ordinary object. That which knows both the manifest world and Śiva is the soul, distinct from both.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>Before the Real, all things are as though void. The Real does not know the unreal as an ordinary object, and the unreal, being without consciousness, knows nothing. That which knows both—the real and the unreal—and is reducible to neither is the soul.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the Sanskrit formulates more clearly the distinction between consciousness and unconsciousness; the Tamil sharpens the polarity between the Real and the non-real. The conclusion remains the same: the soul occupies an intermediate, knowing position.</div>
+    </section>
+
+    <section class="sutra" id="s8">
+      <div class="sutra-head"><h2>Sūtra 8</h2><span class="badge">Guru and spiritual awakening</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>So long as you remain among the “hunters” that are the senses, you do not know yourself. When you are instructed by the guru and abandon identification with the senses, then, becoming blessed, you attain the supreme state.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>The soul, weakened among the hunters that are the five senses, is awakened by the primordial Guru. Through spiritual discipline He instructs it and causes it to leave that confusion behind. Then, realizing that its fulfillment lies not apart from Śiva, it reaches the feet of Hara.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the Tamil is richer in imagery here: the senses appear as hunters, the guru is presented more forcefully, and the spiritual movement becomes more dramatic. The Sanskrit is more concise and direct.</div>
+    </section>
+
+    <section class="sutra" id="s9">
+      <div class="sutra-head"><h2>Sūtra 9</h2><span class="badge">Inner vision and the five-syllabled mantra</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>Seeing the Lord within the field of inner consciousness, abandoning the mirage of mental modifications, and attaining the shade of Śiva’s feet, the wise should meditate on the Pañcākṣarī, the five-syllabled mantra: Namaḥ Śivāya.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>The physical eye perceives only the bond; it does not perceive the Lord. Therefore, with the eye of knowledge, one must seek the Lord within one’s own awareness. Abandoning the bond as one abandons a mirage, one should rest in Śiva’s cool shade and contemplate the five-syllabled mantra: Namaḥ Śivāya.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the practical content coincides, but the Tamil draws more sharply the contrast between the “eye of flesh” and the “eye of knowledge.” Its language is more contemplative and more experiential.</div>
+    </section>
+
+    <section class="sutra" id="s10">
+      <div class="sutra-head"><h2>Sūtra 10</h2><span class="badge">Union and service</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>One who attains union with Śiva, becoming accomplished, acts under dependence upon Him. No longer touched by mala, māyā, and other impurities, such a one becomes possessed of direct experience.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>By this path the soul becomes one with Him, while remaining in the service of the Lord. Then mala, māyā, and heavy karma no longer bind it.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the Tamil makes more visible a strong trait of Śaiva Siddhānta: liberation is not merely abstract union, but abiding in a relation of service to the Lord. The Sanskrit preserves that line, though in less affective language.</div>
+    </section>
+
+    <section class="sutra" id="s11">
+      <div class="sutra-head"><h2>Sūtra 11</h2><span class="badge">Śiva as illuminator</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>The soul is that which makes the eyes see. Śiva is that which makes the soul itself see. Therefore one should cultivate supreme devotion toward Him, the true benefactor of the soul.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>Just as the mind presents objects to the seeing eye, Śiva illumines the very mind that knows. Therefore, with tireless love, the soul should go to the feet of Hara.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the doctrinal line is the same: there is a higher illumination without which the soul does not know. The Sanskrit casts this as a cognitive chain; the Tamil carries the reader more quickly into devotion.</div>
+    </section>
+
+    <section class="sutra" id="s12">
+      <div class="sutra-head"><h2>Sūtra 12</h2><span class="badge">Devotees, temple, and lived worship</span></div>
+      <div class="cols">
+        <div class="col sans"><h3>Sanskrit-based version</h3><p>For liberation, one should draw near to the true saints, honor their marks and forms, and worship the temple of Śiva. Thus should one understand, in the Śivajñānabodha, the essential determination of Śaiva doctrine.</p></div>
+        <div class="col tamil"><h3>Tamil-based version</h3><p>When the impurity that blocked union with the flower-like feet has been removed, the soul should keep company with devotees. With abundant love, free from delusion, it should worship both the sacred form of the devotees and the temple itself as Hara.</p></div>
+      </div>
+      <div class="comment"><strong>Relevant difference:</strong> the Tamil closes in a more concrete, liturgical, and communal register: devotees, sacred form, temple. The Sanskrit preserves the same line in a more compact and almost programmatic way.</div>
+    </section>
+
+    <section class="hero" style="margin-top: 26px;">
+      <h2>Comparative conclusion</h2>
+      <p>The two versions should not be read as if one cancelled the other. The Sanskrit form helps reveal the conceptual architecture of the text. The Tamil form helps show how that same doctrine is lived, practiced, interiorized, and ritualized.</p>
+      <p>In other words: the first tends to explain more clearly what is being asserted; the second tends to show more clearly how that truth is experienced and embodied.</p>
+      <div class="foot">
+        Prepared in English for comparative study. For more philological or doctrinal work, it is best to keep checking the base text and the traditional commentaries alongside this synthetic comparison.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
